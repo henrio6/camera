@@ -31,9 +31,14 @@ namespace Camera
 		return g_currentCamera;
 	}
 
+	array<CHmsCamera@> GetAll()
+	{
+		return g_currentCameras;
+	}
+
 	CHmsCamera@ FindCurrent()
 	{
-		return FindCurrentCamera();
+		return FindCameras()[0];
 	}
 
 	mat4 GetProjectionMatrix()

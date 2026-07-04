@@ -14,6 +14,9 @@ namespace Camera
 	// Gets the current camera used for rendering.
 	import CHmsCamera@ GetCurrent() from "Camera";
 
+	// Gets all current cameras used for rendering.
+	import array<CHmsCamera@> GetAll() from "Camera";
+
 	// Finds the current camera used for rendering by looping over all cameras. This is normally
 	// already done for you in EarlyRender and can be retrieved through GetCurrent, which you should
 	// prefer over this more expensive direct search.
