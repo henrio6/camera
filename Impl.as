@@ -36,6 +36,11 @@ namespace Camera
 		return g_currentCameras;
 	}
 
+	int GetCameraCount()
+	{
+		return g_currentCameras.Length;
+	}
+
 	CHmsCamera@ FindCurrent()
 	{
 		return FindCameras()[0];
